@@ -1,10 +1,12 @@
 package modelo;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.TableGenerator;
 
@@ -17,9 +19,14 @@ public class Camarero implements Serializable{
 	
 	@Id
 	@GeneratedValue(generator="camarero_gen")
-	@TableGenerator(name="camarero_gen", table="sqlite_sequence", pkColumnName="name", valueColumnName="seq", pkColumnValue="empleados")
+	@TableGenerator(name="camarero_gen", table="sqlite_sequence", pkColumnName="name", valueColumnName="seq", pkColumnValue="camareros")
 	private Integer id;
+	private String nombre;
+	private String apellido;
+	private Double sueldo;
 	
+	@OneToMany(mappedBy="camarero")
+	private ArrayList<Cuenta> cuentas;
 	public Camarero() {
 		super();
 	}
