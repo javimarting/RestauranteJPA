@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+	<persistence-unit name="provider-name"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>modelo.Camarero</class>
+		<class>sample.db.pojos.Department</class>
+		<class>sample.db.pojos.Report</class>
+		<properties>
+			<!-- Connection properties -->
+			<property name="javax.persistence.jdbc.driver" value="org.sqlite.JDBC" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:sqlite:./db/restaurante.db" />
+			<!-- Controlan nivel de Log -->
+			<property name="eclipselink.logging.level" value="INFO" />
+			<!-- JPA doesn't create the schema -->
+			<property name="eclipselink.ddl-generation" value="none" />
+		</properties>
+	</persistence-unit>
+</persistence>
