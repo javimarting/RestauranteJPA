@@ -29,4 +29,29 @@ public class Mesa implements Serializable{
 	public Mesa() {
 		super();
 	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Integer getNum_personas() {
+		return num_personas;
+	}
+
+	public void setNum_personas(Integer num_personas) {
+		this.num_personas = num_personas;
+	}
+
+	public ArrayList<Cuenta> getCuentas() {
+		return cuentas;
+	}
+
+	public void setCuentas(ArrayList<Cuenta> cuentas) {
+		this.cuentas = cuentas;
+	}
+	
 }

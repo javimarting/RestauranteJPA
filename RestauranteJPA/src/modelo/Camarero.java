@@ -30,4 +30,36 @@ public class Camarero implements Serializable{
 	public Camarero() {
 		super();
 	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String getApellido() {
+		return apellido;
+	}
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+	public Double getSueldo() {
+		return sueldo;
+	}
+	public void setSueldo(Double sueldo) {
+		this.sueldo = sueldo;
+	}
+	public ArrayList<Cuenta> getCuentas() {
+		return cuentas;
+	}
+	public void setCuentas(ArrayList<Cuenta> cuentas) {
+		this.cuentas = cuentas;
+	}
+	
+	
 }

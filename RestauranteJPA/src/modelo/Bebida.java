@@ -32,4 +32,37 @@ public class Bebida implements Serializable{
 	public Bebida() {
 		super();
 	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public List<CuentaBebidaAsociacion> getCuentas() {
+		return cuentas;
+	}
+
+	public void setCuentas(List<CuentaBebidaAsociacion> cuentas) {
+		this.cuentas = cuentas;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Double getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(Double precio) {
+		this.precio = precio;
+	}
+	
 }

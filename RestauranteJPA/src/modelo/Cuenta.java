@@ -36,4 +36,37 @@ public class Cuenta implements Serializable{
 	public Cuenta() {
 		super();
 	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Date getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
+	}
+
+	public Camarero getCamarero() {
+		return camarero;
+	}
+
+	public void setCamarero(Camarero camarero) {
+		this.camarero = camarero;
+	}
+
+	public Mesa getMesa() {
+		return mesa;
+	}
+
+	public void setMesa(Mesa mesa) {
+		this.mesa = mesa;
+	}
+	
 }
