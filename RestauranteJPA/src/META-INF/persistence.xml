@@ -8,8 +8,11 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
 		transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<class>modelo.Camarero</class>
-		<class>sample.db.pojos.Department</class>
-		<class>sample.db.pojos.Report</class>
+		<class>modelo.Cuenta</class>
+		<class>modelo.Bebida</class>
+		<class>modelo.Ingrediente</class>
+		<class>modelo.Mesa</class>
+		<class>modelo.Plato</class>
 		<properties>
 			<!-- Connection properties -->
 			<property name="javax.persistence.jdbc.driver" value="org.sqlite.JDBC" />
